@@ -25,19 +25,19 @@ public class BrojKarakteraRijeciLinija {
 					if (Character.isLetter(linija.charAt(i)))
 						brojKaraktera++;
 				}
-				
+
 				for (int i = 0; i < linija.length(); i++) {
 					if (linija.charAt(i) == ' ') {
 						brojRijeci++;
 					}
 				}
-
+				unos.close();
 			}
 			System.out.println("Broj karaktera u fajlu iznosi: " + brojKaraktera);
 			System.out.println("Broj rijeci u fajlu iznosi: " + brojRijeci);
 			System.out.println("Broj linija u fajlu iznosi: " + brojLinija);
 		} else
 			System.out.println("Ne postoji fajl sa tim imenom.");
-
+		input.close();
 	}
 }

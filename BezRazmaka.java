@@ -22,10 +22,10 @@ public class BezRazmaka {
 				}
 
 			}
-
+			unos.close();
 		} else
 			System.out.println("Ne postoji fajl sa tim imenom.");
-
+		input.close();
 	}
 
 }
